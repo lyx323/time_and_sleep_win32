@@ -1,0 +1,10 @@
+	clock_t start, end;
+	start = clock();
+
+	foo（.....）;
+
+	end = clock();
+	double during;
+	during = (double)(end - start)/CLOCKS_PER_SEC;
+	std::cout << "Time is " << during <<"s"<< std::endl;
+	Sleep(2000);
